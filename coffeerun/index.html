@@ -11,6 +11,7 @@ rap/3.3.6/css/bootstrap.min.css">
       <h1>CoffeeRun</h1>
     </header>
     <section>
+
       <div class="panel panel-default">
         <div class="panel-body">
         <form data-coffee-order="form">
@@ -68,110 +69,108 @@ rap/3.3.6/css/bootstrap.min.css">
           </div>
         </div>
       </div>
+    </section>
 
-      <link href="payment-form.css" rel="stylesheet">
+    <section>
+      <form>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2>Payment form</h2>
+              <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+          </div>
+          <div class="panel-body">
+            <section>
+              <h2>Contact Information</h2>
+              <fieldset>
+                <legend>Title</legend>
+                <ul>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="Title1" value="Mister">
+                      Mister
+                      </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="Title1" value="Miss">
+                      Miss
+                    </label>
+                  </div>
+                </ul>
+              </fieldset>
+            </section>
 
+            <section>
+              <div class="panel-body">
+                <p>
+                  <label for="name">
+                    <span>Name: </span>
+                  <strong><abbr title="required">*</abbr></strong>
+                  </label>
+                    <input type="text" id="name" name="username">
+                </p>
+                <p>
+                  <label for="mail">
+                    <span>E-mail: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                  </label>
+                    <input type="email" id="mail" name="usermail">
+                </p>
+                <p>
+                  <label for="pwd">
+                    <span>Password: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                  </label>
+                    <input type="password" id="pwd" name="password">
+                </p>
+              </div>
+            </section>
 
+            <section>
+              <div class="panel-body">
+                <h2>Payment information</h2>
+                  <p>
+                  <label for="card">
+                    <span>Card type:</span>
+                      </label>
+                        <select id="card" name="usercard">
+                          <option value="visa">Visa</option>
+                          <option value="mc">Mastercard</option>
+                          <option value="amex">American Express</option>
+                        </select>
+                  </p>
+                  <p>
+                    <label for="number">
+                      <span>Card number:</span>
+                        <strong><abbr title="required">*</abbr></strong>
+                    </label>
+                      <input type="number" id="number" name="cardnumber">
+                  </p>
+                  <p>
+                  <label for="date">
+                    <span>Expiration date:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                    <em>formatted as mm/yy</em>
+                  </label>
+                    <input type="date" id="date" name="expiration">
+                  </p>
 
+              </div>
+            </section>
 
+          </div>
 
-      <h5>Payment form</h5>
-
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <section>
-  <h2>Contact information</h2>
-
-  <form>
-        <p>
-          Required fields are followed by
-          <strong>
-            <abbr title="required">*</abbr>
-          </strong>.
-        </p>
-  </form>
-
-
-  <fieldset>
-    <legend>Title
-    <ul>
-        <li>
-          <label for="title_1">
-            <input type="radio" id="title_1" name="title" value="M." >
-            Mister
-          </label>
-        </li>
-        <li>
-          <label for="title_2">
-            <input type="radio" id="title_2" name="title" value="Ms.">
-            Miss
-          </label>
-        </li>
-    </ul>
-    </legend>
-  </fieldset>
-  <p>
-    <label for="name">
-      <span>Name: </span>
-      <strong><abbr title="required">*</abbr></strong>
-    </label>
-    <input type="text" id="name" name="username">
-  </p>
-  <p>
-    <label for="mail">
-      <span>E-mail: </span>
-      <strong><abbr title="required">*</abbr></strong>
-    </label>
-    <input type="email" id="mail" name="usermail">
-  </p>
-  <p>
-    <label for="pwd">
-      <span>Password: </span>
-      <strong><abbr title="required">*</abbr></strong>
-    </label>
-    <input type="password" id="pwd" name="password">
-  </p>
-
-  <section>
-      <h2>Payment information</h2>
-      <p>
-        <label for="card">
-          <span>Card type:</span>
-        </label>
-        <select id="card" name="usercard">
-          <option value="visa">Visa</option>
-          <option value="mc">Mastercard</option>
-          <option value="amex">American Express</option>
-        </select>
-      </p>
-      <p>
-        <label for="number">
-          <span>Card number:</span>
-          <strong><abbr title="required">*</abbr></strong>
-        </label>
-        <input type="number" id="number" name="cardnumber">
-      </p>
-      <p>
-        <label for="date">
-          <span>Expiration date:</span>
-          <strong><abbr title="required">*</abbr></strong>
-          <em>formatted as mm/yy</em>
-        </label>
-        <input type="date" id="date" name="expiration">
-      </p>
-  </section>
-
-
-
-
-
-</section>
         </div>
 
-      </div>
 
 
+      </form>
     </section>
+
+
+
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"
 charset="utf-8"></script>
